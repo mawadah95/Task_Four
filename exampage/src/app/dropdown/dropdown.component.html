@@ -1,0 +1,16 @@
+
+<div class="Questionstyle">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <h2>Exam </h2>
+  <h5>Select Student Name</h5>
+  <p-dropdown [(ngModel)]="selectedName" [options]="nameOptions" optionLabel="label" placeholder="Select...."></p-dropdown>
+  <br>
+  <br>
+  <div class="text">
+  <p-button styleClass="p-button-secondary" label="Next" [disabled]="!selectedName" (click)="goToNext()" routerLink="/exam"></p-button>
+  </div>
+</div>

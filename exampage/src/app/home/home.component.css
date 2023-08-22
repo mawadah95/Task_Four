@@ -1,0 +1,35 @@
+
+
+:host ::ng-deep .p-breadcrumb {
+  background: #0da350 !important;
+  display: flex;
+  justify-content: center;
+}
+:host ::ng-deep .p-breadcrumb ul li .p-menuitem-link .p-menuitem-text {
+  color: #fff !important;
+}
+:host ::ng-deep .p-breadcrumb ul li.p-breadcrumb-chevron {
+  color: #fff !important;
+}
+
+:host ::ng-deep .p-breadcrumb ul li:last-child .p-menuitem-text {
+  color: #fff !important;
+  font-weight: 600;
+}
+:host ::ng-deep .p-breadcrumb ul li .p-menuitem-link .p-menuitem-icon {
+  color: #fff !important;
+}
+:host ::ng-deep .p-breadcrumb ul li .p-menuitem-link:focus {
+  box-shadow: 0 0 0 0.2rem #0da350 !important;
+}
+
+:host ::ng-deep .p-image-preview-container {
+  box-shadow: 5px 5px 20px;
+  display: flex;
+     justify-content: center;
+     width: 1000px;
+     height: 400px;
+     text-align: center;
+     margin-left: 260px;
+}
+
