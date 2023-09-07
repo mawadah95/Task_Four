@@ -1,11 +1,34 @@
+<!-- 
+<div class="card flex justify-content-center">
+  <p-breadcrumb class="max-w-full" [model]="items" [home]="home"></p-breadcrumb>
+</div> -->
 
+<!-- <p-breadcrumb [model]="items" [home]="home"></p-breadcrumb> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Exam Web</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="/drop">Exam Start</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-<p-breadcrumb [model]="items" [home]="home"></p-breadcrumb>
 <br>
 <br>
 <p-image [src]="images"
          alt="Image"
-         width="1000px"
+         width="600px"
          height="400px"
          [preview]="true"
          >
@@ -13,10 +36,18 @@
 
 <br>
 <br>
+<p class="p">What is Lorem Ipsum?<br>
+ Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+ when an unknown printer took a galley of type and scrambled it to make a type<br>
+ specimen book.</p>
 
 
 
-<div class="p-5 text-center">
-
-  <a class="btn btn-outline-light btn-lg" href="/drop" role="button" styleClass="p-button-success">Start Your Exam</a>
-</div>
+<!-- <div class="p-5 text-center button">
+  <a class="btn btn-outline-dark btn-secondary"
+  href="/drop" role="button" styleClass="p-button-secondary">Start Your Exam</a>
+</div> -->
+<footer class="footer-content"> 
+  <p>copyright &copy;2023  Mawaddah</p>
+</footer>

@@ -48,7 +48,7 @@ export class ExamComponent {
 
   ];
 
- 
+  selectedAnswers: (number | null)[] = new Array(this.questions.length).fill(null);
  
   currentQuestionIndex = 0;
   selectedOptionIndex: number | null = null;
@@ -61,23 +61,48 @@ export class ExamComponent {
   scorePercentage: number | undefined;
 
 
+
   nextQuestion() {
+    // Save the selected answer for the current question
+    this.selectedAnswers[this.currentQuestionIndex] = this.selectedOptionIndex;
+  
     this.currentQuestionIndex++;
     this.selectedOptionIndex = null;
     this.isAnswerChecked = false;
-
+  
     if (this.currentQuestionIndex === this.questions.length) {
       this.isQuestionnaireComplete = true;
     }
   }
-
+  
   previousQuestion() {
+    // Save the selected answer for the current question
+    this.selectedAnswers[this.currentQuestionIndex] = this.selectedOptionIndex;
+  
     this.currentQuestionIndex--;
-    this.selectedOptionIndex = null;
+    this.selectedOptionIndex = this.selectedAnswers[this.currentQuestionIndex] || null;
     this.isAnswerChecked = false;
-
+  
     this.isQuestionnaireComplete = false;
   }
+
+  // nextQuestion() {
+  //   this.currentQuestionIndex++;
+  //   this.selectedOptionIndex = null;
+  //   this.isAnswerChecked = false;
+
+  //   if (this.currentQuestionIndex === this.questions.length) {
+  //     this.isQuestionnaireComplete = true;
+  //   }
+  // }
+
+  // previousQuestion() {
+  //   this.currentQuestionIndex--;
+  //   this.selectedOptionIndex = null;
+  //   this.isAnswerChecked = false;
+
+  //   this.isQuestionnaireComplete = false;
+  // }
 
 
   submitQuiz() {

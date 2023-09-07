@@ -1,7 +1,7 @@
 
 <div class="Questionstyle" *ngIf="currentQuestionIndex >= 0 && currentQuestionIndex < questions.length">
   <h4>{{ questions[currentQuestionIndex].question }}</h4>
-  <div class="Questionstyle" *ngFor="let option of questions[currentQuestionIndex].options; let i = index">
+  <div class="Questionstyle_2" *ngFor="let option of questions[currentQuestionIndex].options; let i = index">
     <p-radioButton
       [name]="'options' + currentQuestionIndex"
       [label]="option"
@@ -13,16 +13,19 @@
   </div>
   <br><br>
   <br><br>
-  <br><br> <!-- <p-button (click)="checkAnswer()" [disabled]="selectedOptionIndex === null">Check Answer</p-button>-->
-  <p-button (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0">Previous</p-button> &nbsp; &nbsp;
-  <p-button (click)="nextQuestion()" [disabled]="!isAnswerChecked">Next</p-button>
+   
+  <!-- <p-button (click)="checkAnswer()" [disabled]="selectedOptionIndex === null">Check Answer</p-button>-->
+  <!-- <p-button (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0" styleClass="p-button-secondary">Previous</p-button> -->
+  <p-button (click)="previousQuestion()" *ngIf="currentQuestionIndex > 0" styleClass="p-button-secondary">Previous</p-button>&nbsp; &nbsp; 
+  <p-button (click)="nextQuestion()"  styleClass="p-button-secondary">Next</p-button>
+  <!-- [disabled]="!isAnswerChecked" -->
 </div>
 
 
 <div *ngIf="currentQuestionIndex === questions.length" class="test">
- &nbsp;&nbsp; <h2>You have complited your task</h2>
+ &nbsp;&nbsp; <h2>You have completed your task</h2>
  &nbsp; &nbsp;<p>Thank you</p>
- &nbsp; <p-button [disabled]="!isQuestionnaireComplete" (click)="submitQuiz()">Submit Answers</p-button>
+ &nbsp; <p-button [disabled]="!isQuestionnaireComplete" (click)="submitQuiz()" styleClass="p-button-secondary">Submit Answers</p-button>
  <br>
  <br>
  <div *ngIf="isQuestionnaireComplete">

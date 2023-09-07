@@ -10,7 +10,9 @@ import { SelectItem } from 'primeng/api';
   
 })
 export class DropdownComponent {
-  selectedName: any;
+
+  selectedName: string | null = null;
+
   nameOptions: SelectItem[] = [
     { label: 'mawadah', value: 'Name 1' },
     { label: 'Ahmed', value: 'Name 2' },
@@ -18,7 +20,38 @@ export class DropdownComponent {
     // Add more options here
   ];
 
+
+
+
+
+
+
+
+
+
+
+
+
 //  selectedName: any;
+// SelectItem: string | undefined ;
+
+//   nameOptions: SelectItem[] = [
+//     { label: 'mawadah', value: 'Name 1' },
+//     { label: 'Ahmed', value: 'Name 2' },
+//     { label: 'alhasani', value: 'Name 3' },
+//     // Add more options here
+//   ];
+
+
+//  selectedName(): boolean {
+//   return !!this.SelectItem;
+//  }
+  // goToNext() {
+  //   // Implement your logic here for navigating to the next step
+  //   console.log('Navigating to the next step with selected name:', this.selectedName);
+  // }
+
+ //  selectedName: any;
  // SName :  = [
    // { name: "Mawadah" },
    // { name: "Zainab" },
@@ -26,11 +59,5 @@ export class DropdownComponent {
    // { name: "Bushra" },
    // { name: "Abeer" },
  // ];
-  goToNext() {
-    // Implement your logic here for navigating to the next step
-    console.log('Navigating to the next step with selected name:', this.selectedName);
-  }
-
- 
 
 }

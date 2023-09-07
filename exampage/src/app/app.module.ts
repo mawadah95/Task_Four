@@ -20,6 +20,7 @@ import { ImageModule } from 'primeng/image';
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
+    
     AppComponent,
     DropdownComponent,
     ExamComponent,

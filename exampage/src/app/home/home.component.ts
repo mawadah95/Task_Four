@@ -16,15 +16,20 @@ export class HomeComponent {
     
   home: MenuItem = {};
   
-  ngOnInit() {
-      this.items = [
-        { label: "AngularJS" },
-        { label: "ReactJS" },
-        { label: "HTML" },
-        { label: "JavaScript" },
-        { label: "PrimeNG" }
-      ];
+  ngOnInit() {}
+
+    // this.items = [{ label: 'Computer' }, { label: 'Notebook' }, { label: 'Accessories' }, { label: 'Backpacks' }, { label: 'Item' }];
+
+    //     this.home = { icon: 'pi pi-home', routerLink: '/' };
+    // }
+      // this.items = [
+      //   { label: "AngularJS" },
+      //   { label: "ReactJS" },
+      //   { label: "HTML" },
+      //   { label: "JavaScript" },
+      //   { label: "PrimeNG" }
+      // ];
       
-      this.home = {icon: 'pi pi-home'};
+      // this.home = {icon: 'pi pi-home'};
   }
-}
+

@@ -1,4 +1,4 @@
-
+/* 
 
 :host ::ng-deep .p-breadcrumb {
   background: #0da350 !important;
@@ -21,15 +21,42 @@
 }
 :host ::ng-deep .p-breadcrumb ul li .p-menuitem-link:focus {
   box-shadow: 0 0 0 0.2rem #0da350 !important;
-}
+} */
+
+
 
 :host ::ng-deep .p-image-preview-container {
   box-shadow: 5px 5px 20px;
   display: flex;
-     justify-content: center;
-     width: 1000px;
-     height: 400px;
-     text-align: center;
-     margin-left: 260px;
+  width: 600px;
+  height: 400px;
+  margin-left: 30%;
 }
 
+.button {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 10px;
+  color: #fff;
+
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.p{
+  text-align: center;
+}

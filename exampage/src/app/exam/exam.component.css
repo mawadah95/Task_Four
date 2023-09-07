@@ -3,8 +3,22 @@
 text-align: center;
 height: 1.2rem;
 margin-top: 5%;
-    }
+margin-bottom: 10px; 
 
+
+    }
+    .Questionstyle_2{
+        /* text-align: center;
+        height: 1.2rem;
+        
+        
+        padding-left: 1%; */
+        top: 50%;
+            left: 50%;
+margin-bottom: 8px;
+ margin-top: 4%;
+            }
+        
 
 .test{
     text-align: center;

@@ -1,16 +1,66 @@
-
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Exam Web</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Home</a>
+        </li>
+   
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 <div class="Questionstyle">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <h2>Exam </h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>Exam</h2>
+  <br>
   <h5>Select Student Name</h5>
-  <p-dropdown [(ngModel)]="selectedName" [options]="nameOptions" optionLabel="label" placeholder="Select...."></p-dropdown>
+  <br>
+  <p-dropdown [(ngModel)]="selectedName" [options]="nameOptions" optionLabel="label"
+    placeholder="Select Name"></p-dropdown>
   <br>
   <br>
   <div class="text">
-  <p-button styleClass="p-button-secondary" label="Next" [disabled]="!selectedName" (click)="goToNext()" routerLink="/exam"></p-button>
+    <p-button styleClass="p-button-secondary highlight-button" label="Next" [disabled]="!selectedName"
+      routerLink="/exam"></p-button>
   </div>
 </div>
+
+<!-- 
+<div class="Questionstyle">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>Exam </h2>
+  <br>
+  <h5>Select Student Name</h5>
+  <br>
+  <p-dropdown [(ngModel)]="selectedName" [options]="nameOptions" optionLabel="label"
+    placeholder="Select Name" ></p-dropdown>
+  <br>
+  <br>
+  <div class="text">
+    <p-button 
+    styleClass="p-button-secondary highlight-button"
+     label="Next" 
+     [disabled]="!selectedName()" 
+      routerLink="/exam"></p-button>
+  </div>
+</div> -->
+<footer class="footer-content"> 
+  <p>copyright &copy;2023  Mawaddah</p>
+</footer>
